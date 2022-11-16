@@ -155,8 +155,15 @@
                 <div class="browse-r">
                     <div class="browse-r-body">
                         <div class="top-tile tile2">
-                            <div class="tile2-head">
-                                Cities you can visit
+                            <div class="tile-top-head">
+                                <div class="tile2-head">
+                                    Cities you can visit
+                                </div>
+                                <div class="tile-footer">
+                                    <center><button class="but-tile">
+                                        <a href="cities.php" class="links">Explore more cities here</a>
+                                    </button></center>
+                                </div>
                             </div>
                             <div class="subtile">
                                 <div class="subtile-2">
@@ -168,7 +175,11 @@
                                             Mumbai
                                         </div>
                                         <div class="subtile-desc">
-                                        Mumbai, the city where dreams are made and fulfilled! From jam-packed railway platforms to the famous Dabbawalas, multi-millionaires to suburban slums, the dazzling Bollywood to the quintessential vada pav, the uniqueness of Mumbai is beyond words. If you are planning a trip to Mumbai, make sure you visit the right places to imbibe the dynamic effervescence of this city. 
+                                        Mumbai, the city where dreams are made and fulfilled! From jam-packed railway 
+                                        platforms to the famous Dabbawalas, multi-millionaires to suburban slums, the 
+                                        dazzling Bollywood to the quintessential vada pav, the uniqueness of Mumbai is 
+                                        beyond words. If you are planning a trip to Mumbai, make sure you visit the right 
+                                        places to imbibe the dynamic effervescence of this city. 
                                         </div>
                                         <div class="subtile-link">
                                             <button class="but-subtile">
@@ -186,7 +197,11 @@
                                             Delhi
                                         </div>
                                         <div class="subtile-desc">
-                                        A unique blend of history and modernity, traditions and culture, commerce and fashion and beyond all of these, a place where all religions prevail with equality. Delhi is unique in its culture and lifestyle. While in areas like Chandni Chowk and old Delhi, you will find the traditional ways of living, places like Vasant Kunj and South Extension will give you a sense of modern-day Delhi.
+                                        A unique blend of history and modernity, traditions and culture, commerce and 
+                                        fashion and beyond all of these, a place where all religions prevail with equality. 
+                                        Delhi is unique in its culture and lifestyle. While in areas like Chandni Chowk 
+                                        and old Delhi, you will find the traditional ways of living, places like Vasant 
+                                        Kunj and South Extension will give you a sense of modern-day Delhi.
                                         </div>
                                         <div class="subtile-link">
                                             <button class="but-subtile">
@@ -195,16 +210,66 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tile-footer">
-                                <center><button class="but-tile">
-                                    <a href="cities.php" class="links">Explore more cities here</a>
-                                </button></center>
-                            </div>
-                            
+                            </div>                            
                         </div>
                         <div class="tile2">
-
+                        <div class="tile-top-head">
+                                <div class="tile2-head">
+                                    Places you must see
+                                </div>
+                                <div class="tile-footer">
+                                    <center><button class="but-tile">
+                                        <a href="places.php" class="links">Explore more places here</a>
+                                    </button></center>
+                                </div>
+                            </div>
+                            <div class="subtile">
+                                <div class="subtile-2">
+                                    <div class="subtile-img">
+                                        <img src="./assets/bhopal-one.jpg" alt="tile2-1" class="subtile-icon">
+                                    </div>
+                                    <div class="subtile-cont">
+                                        <div class="subtile-head">
+                                            Sanchi Stupa
+                                        </div>
+                                        <div class="subtile-desc">
+                                        The Great Stupa at Sanchi has been the focal point of the Buddhist faith in the region 
+                                        since it was built by Emperor Ashoka in the 3rd century BC. The grand structure still 
+                                        inspires awe today and sits at the top of a hill, surrounded by the remains of smaller 
+                                        stupas, monasteries, and temples that were built as the religious community grew in the 
+                                        centuries after the site was founded.
+                                        </div>
+                                        <div class="subtile-link">
+                                            <button class="but-subtile">
+                                                <a href="bhopal.php" class="links">View More</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subtile-2">
+                                    <div class="subtile-img">
+                                        <img src="./assets/delhi-two.jpg" alt="tile2-1" class="subtile-icon">
+                                    </div>
+                                    <div class="subtile-cont">
+                                        <div class="subtile-head">
+                                            Lotus Temple
+                                        </div>
+                                        <div class="subtile-desc">
+                                        A unique blend of history and modernity, traditions and culture, commerce and fashion
+                                        and beyond all of these, a place where all religions prevail with equality. Delhi is 
+                                        unique in its culture and lifestyle. While in areas like Chandni Chowk and old Delhi,
+                                        you will find the traditional ways of living, places like Vasant Kunj and South Extension
+                                        will give you a sense of modern-day Delhi. With more than 10000 visitors daily it is undoubtedly
+                                        one of the most visited tourist attractions in India.
+                                        </div>
+                                        <div class="subtile-link">
+                                            <button class="but-subtile">
+                                                <a href="delhi.php" class="links">View More</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

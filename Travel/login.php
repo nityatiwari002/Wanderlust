@@ -53,11 +53,17 @@
                             Login 
                         </h3>
                         <p class="head3">Don't have an account? <a href="signup.php" class="links">click here</a></p>
-                        
+                        <?php
+                            if(isset($_SESSION['error'])){
+                                echo '<p class="head3 error">'.$_SESSION['error'].'</p>';
+                                unset($_SESSION['error']);
+                            }
+                        ?>
                     </div>
 
                     <div class="login-body">
-                        <?php 
+                        <?php
+                        
                         if(isset($_SESSION['is_logged_in'])){
                             echo '<p class="head3">You are already logged in.</p>';
                         }

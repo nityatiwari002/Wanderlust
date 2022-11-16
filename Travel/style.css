@@ -315,7 +315,7 @@
 
 .browse-r {
     width: 70%;
-    height: 85%;
+    height: 90%;
     left: 25%;
     box-sizing: border-box;
     overflow: scroll;
@@ -327,6 +327,9 @@
 
 }
 
+.error{
+    color: red;
+}
 
 .easy-ac-head {
     margin: 4%;
@@ -436,6 +439,12 @@
     padding-top: 10% 2% 2%;
 }
 
+.tile-top-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .tile2{
     /* height: 70%; */
     padding: 2%;
@@ -487,7 +496,7 @@
 
 .subtile-icon{
     margin-top: 4%;
-    height: 100%;
+    max-height: 100%;
     width: 100%;
     border-radius: 4px;
 }
@@ -520,5 +529,5 @@
 .but-subtile{
     background-color: #87b4c4;
     color: white;
-    border-radius: 4px;
+    border-radius: 10px;
 }
