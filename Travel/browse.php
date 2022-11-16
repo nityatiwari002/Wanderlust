@@ -16,14 +16,30 @@
                 </div>
                 <div class="topdivb">
                     <button class="topbuts">
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </button>
-                    <button class="topbuts">
-                        <a href="login.html">Login</a>
-                    </button>
-                    <button class="topbuts">
-                        <a href="signup.html">Sign up</a>
-                    </button>
+                    <?php 
+                       session_start();
+                       include ('conf.php');
+                        
+
+                        if(isset($_SESSION['is_logged_in'])){
+                            echo '<button class="topbuts">
+                                <a href="logout.php">Logout</a>
+                            </button>
+                            <button class="topbuts">
+                                <a href="booking.php">My Bookings</a>
+                            </button>';
+                        } else{
+                            echo "<button class='topbuts'>
+                                    <a href='login.php'>Login</a>
+                                </button>
+                                <button class='topbuts'>
+                                    <a href='signup.php'>Sign up</a>
+                                </button>";
+                        }
+                    ?>
+                    
                 </div>
             </div>
         </div>
