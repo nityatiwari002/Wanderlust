@@ -64,7 +64,7 @@
                         else{
                     echo
                         '<div class="login-l">
-                            <img src="login.jpg" alt="login" class="login-img">
+                            <img src="./assets/login.jpg" alt="login" class="login-img">
                         </div>
                         <div class="login-r log-r">
                             <form action="login_check.php" method="post">

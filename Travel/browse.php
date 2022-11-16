@@ -52,116 +52,160 @@
                     <div class="easy-ac-body">
                         <div class="tile">
                             <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
+                                <img src="./assets/tile-hotel.jpg" alt="tile-hotel" class="tile-icon">
                             </div>
                             <div class="tile-cont">
-                                
-                            </div>
-                        </div>
-                    
-                        <div class="tile">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
-                            </div>
-                        </div>
-                        <div class="tile">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
+                                <div class="tile-head"> 
+                                     Hotels
+                                </div>
+                                <div class="tile-desc">
+                                    Explore the most luxurious hotels at the best prices with us!
+                                </div>
+                                <div class="tile-link">
+                                    <button class="but-tile">
+                                        <a href="hotels.php" class="links">Explore</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="tile">
                             <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
+                                <img src="./assets/tile-cities.png" alt="tile-cities" class="tile-icon">
                             </div>
                             <div class="tile-cont">
-                                
+                                <div class="tile-head"> 
+                                     Cities
+                                </div>
+                                <div class="tile-desc">
+                                    Plan your trip to any city of your choice!
+                                </div>
+                                <div class="tile-link">
+                                    <button class="but-tile">
+                                        <a href="cities.php" class="links">Explore</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="tile">
                             <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
+                                <img src="./assets/tile-book.png" alt="tile-book" class="tile-icon">
                             </div>
                             <div class="tile-cont">
-                                
+                                <div class="tile-head"> 
+                                     Book hotel
+                                </div>
+                                <div class="tile-desc">
+                                    Make hotel bookings at affordable prices!
+                                </div>
+                                <div class="tile-link">
+                                    <button class="but-tile">
+                                        <a href="booking.php" class="links">Explore</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="tile">
+                            <div class="tile-img">
+                                <img src="./assets/tile-places.png" alt="tile-places" class="tile-icon">
+                            </div>
+                            <div class="tile-cont">
+                                <div class="tile-head"> 
+                                     Places
+                                </div>
+                                <div class="tile-desc">
+                                    Explore the most beautiful places to see!
+                                </div>
+                                <div class="tile-link">
+                                    <button class="but-tile">
+                                        <a href="places.php" class="links">Explore</a>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <?php
+                            if(isset($_SESSION['is_logged_in'])){
+                                echo '<div class="tile">
+                                    <div class="tile-img">
+                                        <img src="./assets/tile-booking.jpg" alt="tile-booking" class="tile-icon">
+                                    </div>
+                                    <div class="tile-cont">
+                                        <div class="tile-head"> 
+                                            My Bookings
+                                        </div>
+                                        <div class="tile-desc">
+                                            View your bookings and manage them!
+                                        </div>
+                                        <div class="tile-link">
+                                            <button class="but-tile">
+                                                <a href="booking.php" class="links">Explore</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>';
+                            }
+                        ?>
+
                     </div>
                 </div>
             </div>
             <div class="browse-r-wrapper">
                 <div class="browse-r">
                     <div class="browse-r-body">
-                        <div class="tile2">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
+                        <div class="top-tile tile2">
+                            <div class="tile2-head">
+                                Cities you can visit
                             </div>
-                            <div class="tile-cont">
-                                
+                            <div class="subtile">
+                                <div class="subtile-2">
+                                    <div class="subtile-img">
+                                        <img src="./assets/mumbai-one.jpg" alt="tile2-1" class="subtile-icon">
+                                    </div>
+                                    <div class="subtile-cont">
+                                        <div class="subtile-head">
+                                            Mumbai
+                                        </div>
+                                        <div class="subtile-desc">
+                                        Mumbai, the city where dreams are made and fulfilled! From jam-packed railway platforms to the famous Dabbawalas, multi-millionaires to suburban slums, the dazzling Bollywood to the quintessential vada pav, the uniqueness of Mumbai is beyond words. If you are planning a trip to Mumbai, make sure you visit the right places to imbibe the dynamic effervescence of this city. 
+                                        </div>
+                                        <div class="subtile-link">
+                                            <button class="but-subtile">
+                                                <a href="mumbai.php" class="links">Explore</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subtile-2">
+                                    <div class="subtile-img">
+                                        <img src="./assets/delhi-one.jpg" alt="tile2-1" class="subtile-icon">
+                                    </div>
+                                    <div class="subtile-cont">
+                                        <div class="subtile-head">
+                                            Delhi
+                                        </div>
+                                        <div class="subtile-desc">
+                                        A unique blend of history and modernity, traditions and culture, commerce and fashion and beyond all of these, a place where all religions prevail with equality. Delhi is unique in its culture and lifestyle. While in areas like Chandni Chowk and old Delhi, you will find the traditional ways of living, places like Vasant Kunj and South Extension will give you a sense of modern-day Delhi.
+                                        </div>
+                                        <div class="subtile-link">
+                                            <button class="but-subtile">
+                                                <a href="delhi.php" class="links">Explore</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="tile-footer">
+                                <center><button class="but-tile">
+                                    <a href="cities.php" class="links">Explore more cities here</a>
+                                </button></center>
+                            </div>
+                            
                         </div>
                         <div class="tile2">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
-                            </div>
+
                         </div>
-                        <div class="tile2">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
-                            </div>
-                        </div>
-                        <div class="tile2">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
-                            </div>
-                        </div>
-                        <div class="tile2">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
-                            </div>
-                        </div>
-                        <div class="tile2">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
-                            </div>
-                        </div>
-                        <div class="tile2">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
-                            </div>
-                        </div>
-                        <div class="tile2">
-                            <div class="tile-img">
-                                <img src="tile-hotel.jpeg" alt="tile-hotel" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
                     

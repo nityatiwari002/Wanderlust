@@ -41,7 +41,7 @@
 
                     <div class="login-body">
                         <div class="login-l">
-                            <img src="login.jpg" alt="login" class="login-img">
+                            <img src="./assets/login.jpg" alt="login" class="login-img">
                         </div>
                         <div class="login-r">
                             <form action="signup_db.php" method="post">
