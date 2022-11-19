@@ -7,7 +7,6 @@
                
     $sql="SELECT * FROM users where user_id='$userid' and user_pass='$pass'"; 
     $res=mysqli_query($conn,$sql);
-    $row=mysqli_fetch_array($res);
     if($result=mysqli_fetch_assoc($res))
     {
         $_SESSION['userid']=$result['user_id'];

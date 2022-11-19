@@ -124,6 +124,7 @@
                             </div>
 
                         </div>
+
                         
                         <?php
                             if(isset($_SESSION['is_logged_in'])){
@@ -269,6 +270,8 @@
                                         </div>
                                     </div>
                                 </div>
+                               
+
                             </div>
                         </div>
                     </div>

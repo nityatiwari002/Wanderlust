@@ -49,47 +49,47 @@
                         </h3>
                         
                     </div>
-                        <?php
-                       
 
+                        <?php
+                        
                             if(!isset($_SESSION['is_logged_in'])){
                                 $_SESSION['error'] = "You need to login to book a hotel";
                                 header('Location: login.php');
                             }
+                            
                                 
                         ?>
                     <div class="login-body">
-                        <form action="book_hotel1.php" method="post">
-                            <div class="form-div">
-                                <div class="label-box"><label for="city" class="labels">Choose your City: </label></div>
-                                <div class="form-box">
-                                    <select name="city" id="city" required>
+                        <?php
+                            $hotel=$_POST['hotel'];
+                            echo $hotel;
+                            $sql="SELECT hotel_id FROM hotel WHERE hotel_name='$hotel'";
+                           
+                            $result=mysqli_query($conn,$sql);
+                            echp 
+                            $row=mysqli_fetch_assoc($result);
+                            $hotel_id=$row['hotel_id'];
+                            $sql1="SELECT room_type from rooms WHERE hotel_id='$hotel_id'";
+                            $result1=mysqli_query($conn,$sql1);
+                            
+                        
+                        ?>
+                        <form action="book_hotel2.php" method="post">
+                                <div class="label-box"><label for="romm_type" class="labels">Choose room type: </label></div>
+                                <div class="form-box">          
+                                    <select name="room_type" id="room_type" required>   
                                         <option value="">--- Select ---</option>  
                                         <?php
-                                        $list = mysqli_query($conn, "SELECT DISTINCT city_name FROM hotel");
-                                        while($row_list = mysqli_fetch_assoc($list)){
-                                            echo '<option value="'.$row_list['city_name'].'">'.$row_list['city_name'].'</option>';
-                                        }
-
-                                        ?>
-                                    </select>
-                                </div>       
-                                <div class="label-box"><label for="hotel" class="labels">Choose your hotel: </label></div>
-                                <div class="form-box">          
-                                    <select name="hotel" id="hotel" required>   
-                                        <option value="">--- Select ---</option> 
-                                        <?php
                                         $list = mysqli_query($conn, "SELECT DISTINCT hotel_name FROM hotel");
-                                        while($row_list = mysqli_fetch_assoc($list)){
-                                            echo '<option value="'.$row_list['hotel_name'].'">'.$row_list['hotel_name'].'</option>';
+                                        while($row1 = mysqli_fetch_assoc($result1)){
+                                            echo '<option value="'.$row_list['room_type'].'">'.$row_list['room_type'].'</option>';
                                         }
-
                                         ?>
                                     </select>
                                 </div>
-                                <input type="submit" name="submit" id="submit">
                             </div>
                         </form>
+
                     </div>
                 </div>   
             </div> 
