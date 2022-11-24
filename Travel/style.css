@@ -59,7 +59,7 @@
     padding: 2px 10px;
     margin-top: 10px;
     z-index: 3;
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .topdiva {
@@ -193,7 +193,7 @@
     box-sizing: border-box;
 }
 
-.log-r{
+.log-r {
     padding-top: 15%;
 }
 
@@ -245,10 +245,11 @@
     cursor: pointer;
 }
 
-.label-box{
+.label-box {
     width: 30%;
 }
-.form-box{
+
+.form-box {
     width: 70%;
 }
 
@@ -327,7 +328,7 @@
 
 }
 
-.error{
+.error {
     color: red;
 }
 
@@ -356,7 +357,7 @@
     width: 95%;
     display: flex;
     flex-direction: row;
-    background-color:#256d85;
+    background-color: #256d85;
     margin: 20px 0;
     box-sizing: border-box;
     border-radius: 4px;
@@ -391,43 +392,44 @@
 
 
 /* tiles */
-.tile-cont{
+.tile-cont {
     padding: 2% 4%;
     box-sizing: border-box;
 }
 
-.tile-head{
+.tile-head {
     font-size: 120%;
     padding: 2% 2%;
     font-weight: bold;
     color: white;
 }
 
-.tile-desc{
+.tile-desc {
     color: white;
     padding: 2%;
     font-size: 80%;
 }
 
-.tile-link{
+.tile-link {
     color: white;
     padding: 2%;
     font-size: 100%;
 }
 
-.but-tile, .but-subtile{
+.but-tile,
+.but-subtile {
     padding: 2% 4%;
     border: none;
     border-radius: 2px;
-    background-color:#fbfbfb;
+    background-color: #fbfbfb;
     color: white;
     font-size: 80%;
     font-weight: bold;
     margin: 2% 0;
 }
 
-.links{
-    color:#2b4865;
+.links {
+    color: #2b4865;
     text-decoration: none;
     font-size: 100%;
     font-weight: bold;
@@ -435,58 +437,58 @@
 
 
 /*tile - 2 */
-.top-tile{
+.top-tile {
     padding-top: 10% 2% 2%;
 }
 
-.tile-top-head{
+.tile-top-head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.tile2{
+.tile2 {
     /* height: 70%; */
     padding: 2%;
     width: 95%;
-    background-color:#256d85;
+    background-color: #256d85;
     margin: 20px 0;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 5px 5px 5px rgb(171, 224, 241);
 }
 
-.tile2-head{
+.tile2-head {
     font-size: 220%;
     padding: 0 2% 2%;
     font-weight: bold;
     color: white;
 }
 
-.subtile{
+.subtile {
     height: 95%;
     width: 100%;
     display: flex;
     flex-direction: row;
     /* margin: 20px 0; */
-    margin:auto;
+    margin: auto;
     box-sizing: border-box;
 }
 
 
-.subtile-2{
+.subtile-2 {
     height: 80%;
     width: 45%;
-    background-color:#ffffff;
+    background-color: #ffffff;
     /* margin: 20px 0; */
-    margin:auto;
+    margin: auto;
     margin-top: 2.5%;
     box-sizing: border-box;
     border-radius: 4px;
-    
+
 }
 
-.subtile-img{
+.subtile-img {
     margin-top: 4%;
     padding: 2%;
     height: 40%;
@@ -494,14 +496,14 @@
     margin: auto;
 }
 
-.subtile-icon{
+.subtile-icon {
     margin-top: 4%;
     max-height: 100%;
     width: 100%;
     border-radius: 4px;
 }
 
-.subtile-head{
+.subtile-head {
     text-align: center;
     padding-top: 4%;
     padding-left: 40%;
@@ -511,7 +513,7 @@
     color: #256d85;
 }
 
-.subtile-desc{
+.subtile-desc {
     color: #256d85;
     padding: 2%;
     font-size: 80%;
@@ -519,15 +521,43 @@
     margin: auto;
 }
 
-.subtile-link{
+.subtile-link {
     color: #256d85;
     padding: 2%;
     font-size: 100%;
     text-align: center;
 }
 
-.but-subtile{
+.but-subtile {
     background-color: #87b4c4;
     color: white;
     border-radius: 10px;
+}
+
+/* booking a hotel */
+.book-form{
+    /* padding: 20% 30%; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    
+}
+
+.form-select{
+    padding: 1% 2%;
+    background-color:#256d85;
+    color: white;
+    border-radius: 4px;
+    margin: 20% 0 2%;
+}
+
+.book-submit{
+    background-color: #2b4865;
+    color: white;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 4px;
+    margin: 2% 0;
 }

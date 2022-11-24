@@ -27,6 +27,9 @@
                         if(isset($_SESSION['is_logged_in'])){
                             echo '<button class="topbuts">
                                 <a href="logout.php">Logout</a>
+                            </button>
+                            <button class="topbuts">
+                                <a href="booking.php">My Bookings</a>
                             </button>';
                         } else{
                             echo "<button class='topbuts'>
@@ -45,7 +48,7 @@
                     <div class="login-head">
                         
                         <h3 class="head1">
-                            Book a Hotel 
+                            Choose room type 
                         </h3>
                         
                     </div>
@@ -59,35 +62,40 @@
                             
                                 
                         ?>
-                    <div class="login-body">
+                    
                         <?php
                             $hotel=$_POST['hotel'];
-                            echo $hotel;
-                            $sql="SELECT hotel_id FROM hotel WHERE hotel_name='$hotel'";
-                           
+                            $sql="SELECT hotel_id FROM hotel WHERE hotel_name='$hotel'";   
                             $result=mysqli_query($conn,$sql);
-                            echp 
                             $row=mysqli_fetch_assoc($result);
                             $hotel_id=$row['hotel_id'];
-                            $sql1="SELECT room_type from rooms WHERE hotel_id='$hotel_id'";
-                            $result1=mysqli_query($conn,$sql1);
-                            
-                        
+                            $_SESSION['hotelId']=$hotel_id;
+                                     
                         ?>
-                        <form action="book_hotel2.php" method="post">
-                                <div class="label-box"><label for="romm_type" class="labels">Choose room type: </label></div>
-                                <div class="form-box">          
-                                    <select name="room_type" id="room_type" required>   
-                                        <option value="">--- Select ---</option>  
-                                        <?php
-                                        $list = mysqli_query($conn, "SELECT DISTINCT hotel_name FROM hotel");
-                                        while($row1 = mysqli_fetch_assoc($result1)){
-                                            echo '<option value="'.$row_list['room_type'].'">'.$row_list['room_type'].'</option>';
-                                        }
-                                        ?>
-                                    </select>
+                        <form action="mybookings.php" method="post">
+                                    <?php
+                                        $sql1="SELECT * FROM rooms WHERE hotel_id='$hotel_id'";
+                                        $result1=mysqli_query($conn,$sql1);
+                                    ?>
+                                   
+                                   <div class="book-form">
+                                        <div class="select-box">
+                                        <center><select name="room_type" id="room_type" required class="form-select">   
+                                            <option value="">--- Select ---</option>  
+                                            <?php  
+                                                echo 'hello';
+                                                while($row1 = mysqli_fetch_array($result1))  
+                                                {  
+                                                    echo '<option value="'.$row1["room_type"].'">'.$row1["room_type"].'</option>';  
+                                                }
+                                            ?>
+
+                                        </select></center>
+                                        </div>
+                                        <div>
+                                            <center><input type="submit" name="submit" id="submit" value="move forward" class="book-submit"></center>
+                                        </div>
                                 </div>
-                            </div>
                         </form>
 
                     </div>
