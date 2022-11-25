@@ -28,7 +28,7 @@
                                 <a href="logout.php">Logout</a>
                             </button>
                             <button class="topbuts">
-                                <a href="booking.php">My Bookings</a>
+                                <a href="mybookings.php">My Bookings</a>
                             </button>';
 
                         } else{
