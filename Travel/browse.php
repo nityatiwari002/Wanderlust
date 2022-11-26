@@ -68,24 +68,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tile">
-                            <div class="tile-img">
-                                <img src="./assets/tile-cities.png" alt="tile-cities" class="tile-icon">
-                            </div>
-                            <div class="tile-cont">
-                                <div class="tile-head"> 
-                                     Cities
-                                </div>
-                                <div class="tile-desc">
-                                    Plan your trip to any city of your choice!
-                                </div>
-                                <div class="tile-link">
-                                    <button class="but-tile">
-                                        <a href="cities.php" class="links">Explore</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                       
                         <div class="tile">
                             <div class="tile-img">
                                 <img src="./assets/tile-book.png" alt="tile-book" class="tile-icon">
@@ -162,7 +145,7 @@
                                 </div>
                                 <div class="tile-footer">
                                     <center><button class="but-tile">
-                                        <a href="cities.php" class="links">Explore more cities here</a>
+                                        <a href="places.php" class="links">Explore more cities here</a>
                                     </button></center>
                                 </div>
                             </div>

@@ -750,7 +750,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
-.res{
+.res, .res1{
     font-size: 30px;
     width: 300px;
     margin-left: 110px;
@@ -773,7 +773,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: row;
 }
-.res a{
+.res a, .res1 a{
     text-decoration: none;
     color: white;
 }
@@ -781,7 +781,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: white;
 }
-.res:hover {
+.res:hover, .res1:hover {
     background-color: #256d85;
     border-color: white;
 }
@@ -798,4 +798,8 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: rgb(207, 220, 255);
       font-family: 'Noto Sans TC';
       
+  }
+
+  .res1{
+    margin-left: 35%;
   }

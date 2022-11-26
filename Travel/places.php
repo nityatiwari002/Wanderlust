@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderlust-Browse</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body class="browse-body">  
     <div class="main">
@@ -68,7 +70,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+                       
                         <div class="tile">
                             <div class="tile-img">
                                 <img src="./assets/tile-book.png" alt="tile-book" class="tile-icon">
@@ -139,61 +141,47 @@
                 <div class="browse-r">
                     <div class="browse-r-body">
                                
-                            <div class="top">
-                                <div class="tleft">
-                                   <h1>CP Villa</h1>
-                                  <img src="assets\hotels\cp_villa.webp" alt="the-bastion img">
-                               </div>
-                               <div class="tright">
-                               Conveniently situated in the Central Delhi part,
-                                this property puts you close 
-                               to attractions and interesting dining options and is packed 
-                               with in-house facilities
-                                to improve the quality and joy of your stay.
-                               </div>
+                            <div class="one">
+                                <!-- <img src="assets\cities\mumbai1.jpg" alt=""> -->
+                                <div class="mumbai">
+                                    MUMBAI
+                                </div>
+                                <div class="buut">
+                                        <button class="res1">
+                                        <a href="mumbai.php">Click here</a>
+                                        </button>
+                                </div>
+                    
+
 
                             </div>
-                            <div class="middle">
-                                <div class="mleft">
-                                    <h1>The Rooms</h1>
-                                    <div class = "text">
-                                    Click below to check for the different rooms available!
-                                    <div class="but">
-                                        <button class="click">
-                                        <a href="villa-rooms.php">Click here</a>
-                                        </button>
-                                    </div>
-                                    </div>
-                                    
-                                   
+                            <div class="two">
+                                
+                                <!-- <img src="assets\cities\bhopal-one.jpg" alt=""> -->
+                                <div class="bhopal">
+                                    BHOPAL
                                 </div>
-                                <div class="mright">
-                                    <img src="assets\hotels\private_patio.webp" alt="room-img">
+                                <div class="buut">
+                                        <button class="res1">
+                                        <a href="bhopal.php">Click here</a>
+                                        </button>
+
+                                    
                                 </div>
 
                 
                             </div>
-                            <div class="bottom">
-                                <div class="bleft">
-                                    <h1>How to Reach</h1>
-                                    <img src="assets\destination\dest1.jpg" alt="reach">
+                            <div class="three">
+                                <div class="bhopal">
+                                    DELHI
                                 </div>
-                                <div class="bright">
-                                    <ul>
-                                        <li>
-                                        Located at a distance of 18.0 KMs from the Indira Gandhi International Airport.
-                                        </li>
-                                        <li>
-                                        Located at a 500 meters walking distance from the Gole Market, New Delhi.
-                                        </li>
-                                        <li>
-                                        700m from R.K Ashram Marg Metro Station.
-                                        </li>
-                                    </ul>
-                                
+                                <div class="buut">
+                                        <button class="res1">
+                                        <a href="delhi.php">Click here</a>
+                                        </button>
                                 </div>
                                 
-                               
+                            <!-- <img src="assets\cities\delhi-one.jpg" alt=""> -->
                             </div>
 
 
