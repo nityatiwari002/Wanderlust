@@ -99,7 +99,7 @@
                                 </div>
                                 <div class="tile-link">
                                     <button class="but-tile">
-                                        <a href="booking.php" class="links">Explore</a>
+                                        <a href="choose_city.php" class="links">Explore</a>
                                     </button>
                                 </div>
                             </div>

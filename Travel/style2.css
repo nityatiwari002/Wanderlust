@@ -577,6 +577,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display:flex;
     flex-direction:row;
     padding: 5%;
+    max-width: 100%;
 }
 .mleft .text{
     /* border: 2px solid black; */
@@ -585,7 +586,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display:relative;
     text-align: center;
     padding: 4%;
-    width:500px;
+    width:440px;
 }
 .mleft2{
     padding: 5%;
@@ -603,25 +604,26 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 2%;
 }
 .mright{
-    margin-left: 130px;
+    margin-left: 10px;
+    margin-right: 20px;
     width:500px;
     /* border: 2px solid pink; */
 
 }
 .mright img{
-    width: 500px;
+    width: 440px;
     margin-right:20px ;
     border-radius: 12px;
 
 }
 .mright2{
-    margin-left: 230px;
+    margin-left: 30px;
     width:500px;
     /* border: 2px solid pink; */
 
 }
 .mright2 img{
-    width: 500px;
+    width: 440px;
     margin-right:20px ;
     border-radius: 12px;
 }
@@ -739,7 +741,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width:100%;
 }
 .mumbai{
-  margin-left: 350px;
+  margin-left: 220px;
   /* border: 2px solid red; */
     font-size: 70px;
     padding: 110px;
@@ -751,7 +753,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .res{
     font-size: 30px;
     width: 300px;
-    margin-left: 200px;
+    margin-left: 110px;
     height: 100px;
     background-color: #2b4865;
     border-radius: 20px;
@@ -789,7 +791,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .bhopal{
-    margin-left: 350px;
+    margin-left: 240px;
     /* border: 2px solid red; */
       font-size: 70px;
       padding: 110px;
